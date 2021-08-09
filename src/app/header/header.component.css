@@ -1,3 +1,6 @@
 .editable-text {
     cursor: pointer;
 }
+.editable-text:hover {
+    color: gray;
+}
