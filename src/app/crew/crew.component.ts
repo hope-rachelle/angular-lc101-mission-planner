@@ -13,7 +13,7 @@ export class CrewComponent implements OnInit {
     {name: "Ellen Ochoa", firstMission: true}
   ];
 
-  editedMember: object=null;
+  memberBeingEdited: object=null;
 
   constructor() { }
 
@@ -28,11 +28,11 @@ export class CrewComponent implements OnInit {
       this.crew.splice(index, 1);
     }
     edit(member:object) {
-      this.editedMember = member;
+      this.memberBeingEdited = member;
     }
     save(name: string, member: object) {
       member['name'] = name;
-      this.editedMember = null;
+      this.memberBeingEdited = null;
       }
 
 }
