@@ -12,14 +12,16 @@ export class EquipmentComponent implements OnInit {
 
   ngOnInit() {
   }
-  add(newItem:string){
-  if(!this.equipment.includes(newItem)){
-    this.equipment.push(newItem);
-  }else{
-    alert("item already added");
-  }}
+  
   remove(item: string) {
     let index = this.equipment.indexOf(item);
     this.equipment.splice(index, 1);
+  }
+  add(newItem:string){
+    if(!this.equipment.includes(newItem)){
+      this.equipment.push(newItem);
+    }else{
+      alert("item already added");
+    }
   }
 }

@@ -4,3 +4,14 @@
 .editable-text:hover {
     color: gray;
 }
+.crew {
+    padding: 40px;
+    margin-left: 200px;
+}
+.input {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 25px;
+}

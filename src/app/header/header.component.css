@@ -4,3 +4,6 @@
 .editable-text:hover {
     color: gray;
 }
+.header {
+    text-align: center;
+}

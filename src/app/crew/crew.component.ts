@@ -21,12 +21,12 @@ export class CrewComponent implements OnInit {
   }
 
     add(memberName: string, isFirst: boolean) {
-      if(!this.crew.includes({name: memberName})){
+      if(!this.crew.includes({name:memberName})){
       this.crew.push({name: memberName, firstMission: isFirst});
     }else{
       alert('This crew member has already been added');
     }
-    }
+  }
     remove(member: object) {
       let index = this.crew.indexOf(member);
       this.crew.splice(index, 1);

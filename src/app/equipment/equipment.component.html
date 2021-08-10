@@ -1,3 +1,4 @@
+<div class="equipment">
 <h3>Equipment</h3>
 <ul>
   <li *ngFor="let item of equipment">
@@ -5,5 +6,8 @@
     <button (click)="remove(item)">remove</button>
   </li>
 </ul>
+<div class="input">
 <input #newItem type="text"/>
 <button (click)="add(newItem.value)">Add</button>
+</div>
+</div>
